@@ -28,7 +28,7 @@ div {
   margin-left: 100px;
 }
 
-.header-title{
+.header-title {
   color: #f7a64f;
   text-shadow: 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 50px white;
   font-size: 500%;
@@ -47,7 +47,14 @@ div {
   padding: 10px;
 }
 
-.item1, .item2, .item3, .item4 {
+img {
+  border-radius: 5px;
+}
+
+.item1,
+.item2,
+.item3,
+.item4 {
   padding: 10px;
   background-color: #dab184;
 }
@@ -72,10 +79,25 @@ div {
   text-align: left;
 }
 
-.grid-container img{
+.grid-container img {
   object-fit: cover;
-  width: 655px;
+  width: 100%;
   height: 300px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 10;
+  background-color: #dab184;
+  border-radius: 0;
+  height: 150px;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-authors li {
+  margin-right: 20px;
+  display: inline-block;
 }
 
 .content {
@@ -85,7 +107,9 @@ div {
   grid-template-columns: 300px auto 300px;
 }
 
-.content-title img{
+.content-title img {
+  position: sticky;
+  top: 20px;
   width: 100%;
 }
 
@@ -114,12 +138,12 @@ li {
   padding-bottom: 50px;
 }
 
-.content-posts div{
+.content-posts div {
   margin-top: 30px;
   padding: 10px;
   background-color: #dab184;
 }
 
-.content-posts img{
+.content-posts img {
   width: 100%;
 }
