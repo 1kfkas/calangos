@@ -27,12 +27,16 @@ div:not(.header) {
   text-align: center;
   text-shadow: 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 50px white;
   font-size: 500%;
+  transition: 0.2s;
+}
+
+.header-title:hover{
+  transform: scale(1.1);
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto;
-  margin: 50px;
+  grid-template-columns: 1fr;
   grid-gap: 50px;
   padding: 10px;
 }
@@ -53,11 +57,6 @@ img {
   color: #9f0000;
   font-size: 30px;
   font-weight: bolder;
-  transition: 0.2;
-}
-
-.a-h1:hover {
-  transform: scale(1.5);
 }
 
 .a-p {
@@ -67,6 +66,10 @@ img {
 
 .grid-container-post p {
   text-align: left;
+}
+
+.grid-container-post p:hover {
+  transform: scale(1.1);
 }
 
 .grid-container img {
@@ -150,5 +153,12 @@ li {
     text-align: justify;
     display: grid;
     grid-template-columns: auto auto 300px;
+  }
+}
+
+@media only screen and (min-width: 735px){
+  .grid-container {
+    margin: 2%;
+    grid-template-columns: 1fr 1fr;
   }
 }
