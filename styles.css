@@ -3,40 +3,30 @@ html {
 }
 
 body {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   margin: 0;
 }
 
-div {
+div:not(.header) {
   border-radius: 10px;
 }
 
 .header {
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
   padding: 6px;
   padding-bottom: 10%;
-  text-align: center;
   background-color: rgb(219, 145, 82);
-  background-image: url(assets/Untitled154.png);
+  background-image: url(assets/Untitled154.jpg);
   background-size: cover;
-  justify-content: space-between;
-  display: flex;
-  flex-direction: row;
 }
 
-.header-left {
-  margin-left: 100px;
-}
-
-.header-title {
+.header-title{
   color: #f7a64f;
+  text-align: center;
   text-shadow: 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 50px white;
   font-size: 500%;
-}
-
-.header-right button {
-  margin: 30px;
-  padding: 5px;
 }
 
 .grid-container {
@@ -104,13 +94,15 @@ img {
   margin: 10px;
   text-align: justify;
   display: grid;
-  grid-template-columns: 300px auto 300px;
+  grid-template-columns: auto;
 }
 
 .content-title img {
   position: sticky;
   top: 20px;
-  width: 100%;
+  max-width: 100%;
+  max-height: 90vh;
+  height: auto;
 }
 
 .content-main {
@@ -120,7 +112,7 @@ img {
 
 .content-main p,
 li {
-  font-size: 20px;
+  font-size: 25px;
   margin: 5px;
 }
 
@@ -146,4 +138,17 @@ li {
 
 .content-posts img {
   width: 100%;
+}
+
+@media only screen and (min-width: 1300px){
+  .content-title img{
+    content:url("assets/Untitled155.png");
+  }
+
+  .content {
+    margin: 10px;
+    text-align: justify;
+    display: grid;
+    grid-template-columns: auto auto 300px;
+  }
 }
