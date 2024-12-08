@@ -5,15 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="assets/calango.ico">
+    <script src="script.js"></script>
     <title>Calangos da Peste - Curiosidades</title>
   </head>
   <body>
-    <div class="header">
-      <br>
-      <br>
-      <br>
-        <a href="index.html" class="header-title">Calangos da Peste</a>
-    </div>
+    <div w3-include-html="header.html"></div>
 
     <div class="content">
       <div class="content-title">
@@ -69,6 +65,7 @@
       </div>
 
       <div class="content-posts">
+        <h1>VEJA MAIS EM:</h1>
         <div><a class="a-h1" href="introducao.html">
           <img src="assets/caatinga.jpg" />
           UM POUCO SOBRE A CAATINGA</a>
@@ -83,5 +80,8 @@
           <p class="a-p">Caatinga, único bioma exclusivamente brasileiro, enfrenta uma série de ameaças que comprometem sua biodiversidade e a qualidade de vida das cerca de 30 milhões de pesso...</p></div>
       </div>
     </div>
+    <script>
+      includeHTML();
+    </script>
   </body>
 </html>

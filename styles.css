@@ -1,5 +1,5 @@
 html {
-  background-color: #fde6ce;
+  background-color: #DFB39A;
 }
 
 body {
@@ -7,31 +7,22 @@ body {
   margin: 0;
 }
 
-div:not(.header) {
+div:not(.header, .footer) {
   border-radius: 10px;
 }
 
 .header {
-  display: grid;
-  justify-content: space-around;
-  align-items: center;
   padding: 6px;
   padding-bottom: 10%;
-  background-color: rgb(219, 145, 82);
   background-image: url(assets/Untitled154.jpg);
   background-size: cover;
 }
 
 .header-title{
-  color: #f7a64f;
-  text-align: center;
-  text-shadow: 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 50px white;
-  font-size: 500%;
-  transition: 0.2s;
-}
-
-.header-title:hover{
-  transform: scale(1.1);
+  margin-top: 7vw;
+  margin-left: 2vw;
+  color: #7B351C;
+  font-size: 5.7vw;
 }
 
 .grid-container {
@@ -50,18 +41,18 @@ img {
 .item3,
 .item4 {
   padding: 10px;
-  background-color: #dab184;
+  background-color: #9F6041;
 }
 
 .a-h1 {
-  color: #9f0000;
+  color: #730000;
   font-size: 30px;
   font-weight: bolder;
 }
 
 .a-p {
   text-align: justify;
-  color: rgb(119, 45, 18);
+  color: #fff2d1;
 }
 
 .grid-container-post p {
@@ -81,9 +72,9 @@ img {
 .footer {
   position: absolute;
   bottom: 10;
-  background-color: #dab184;
+  background-color: #9F6041;
   border-radius: 0;
-  height: 150px;
+  height: 200px;
   width: 100%;
   text-align: center;
 }
@@ -110,7 +101,7 @@ img {
 
 .content-main {
   margin: 20px;
-  color: #9f0000;
+  color: #730000;
 }
 
 .content-main p,
@@ -133,17 +124,23 @@ li {
   padding-bottom: 50px;
 }
 
+.content-posts h1 {
+  text-align: center;
+  color:#730000;
+}
+
 .content-posts div {
   margin-top: 30px;
   padding: 10px;
-  background-color: #dab184;
+  margin: 0 8vw 8vw 8vw;
+  background-color: #9F6041;
 }
 
 .content-posts img {
   width: 100%;
 }
 
-@media only screen and (min-width: 1300px){
+@media only screen and (min-width: 1100px){
   .content-title img{
     content:url("assets/Untitled155.png");
   }
@@ -153,6 +150,18 @@ li {
     text-align: justify;
     display: grid;
     grid-template-columns: auto auto 300px;
+  }
+  
+  .content-posts h1 {
+    display: none;
+  }
+
+  .content-posts div {
+    margin-top: 30px;
+    padding: 10px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
   }
 }
 
